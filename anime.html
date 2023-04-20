@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        @keyframes box1 {
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: red;
+            }
+
+            25%{
+                top: 200px;
+                left: 0px;
+                background-color: blue;
+            }
+
+            50%{
+                top: 200px;
+                left: 200px;
+                background-color: yellow;
+            }
+
+            75%{
+                top: 0px;
+                left: 200px;
+                background-color: green;
+            }
+
+            100%{
+                top: 0px;
+                left: 0px;
+                background-color: red;
+            }
+        }
+
+        @keyframes box2 {
+            0%{
+                top: 200px;
+                left: 0px;
+                background-color: blue;
+                
+            }
+
+            25%{
+                
+                top: 200px;
+                left: 200px;
+                background-color: yellow;
+            }
+
+            50%{
+                top: 0px;
+                left: 200px;
+                background-color: green;
+            }
+
+            75%{
+                top: 0px;
+                left: 0px;
+                background-color: red;
+            }
+
+            100%{
+                top: 200px;
+                left: 0px;
+                background-color: blue;
+            }
+        }
+
+        @keyframes box3 {
+            0%{
+                top: 200px;
+                left: 200px;
+                background-color: yellow;
+                
+            }
+
+            25%{
+                
+                top: 0px;
+                left: 200px;
+                background-color: green;
+            }
+
+            50%{
+                top: 0px;
+                left: 0px;
+                background-color: red;
+            }
+
+            75%{
+                top: 200px;
+                left: 0px;
+                background-color: blue;
+            }
+
+            100%{
+                top: 200px;
+                left: 200px;
+                background-color: yellow;
+            }
+        }
+
+        @keyframes box4 {
+            0%{
+                top: 0px;
+                left: 200px;
+                background-color: green;
+                
+            }
+
+            25%{
+                
+                top: 0px;
+                left: 0px;
+                background-color: red;
+            }
+
+            50%{
+                top: 200px;
+                left: 0px;
+                background-color: blue;
+            }
+
+            75%{
+                top: 200px;
+                left: 200px;
+                background-color: yellow;
+            }
+
+            100%{
+                top: 0px;
+                left: 200px;
+                background-color: green;
+            }
+        }
+
+
+
+
+
+        .box1{
+            
+            background-color: red;
+            animation-name: box1;
+           
+        }
+
+        .box2{
+            
+            background-color: blue;
+            animation-name: box2;
+           
+        }
+
+        .box3{
+            
+            background-color: yellow;
+            animation-name: box3;
+           
+        }
+
+        .box4{
+            
+            background-color: green;
+            animation-name: box4;
+           
+        }
+
+        body{
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+
+        .cont{
+            width: 300px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: 100px;
+            grid-template-rows: 100px;
+        }
+
+        #box{
+            border-radius: 100%;
+            animation-timing-function: linear;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box1" id="box"></div>
+        <div class="box2" id="box"></div>
+        <div class="box3" id="box"></div>
+        <div class="box4" id="box"></div>
+    </div>
+</body>
+</html>
